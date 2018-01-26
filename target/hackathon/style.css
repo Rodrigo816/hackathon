@@ -1,10 +1,18 @@
+.home {background: url("bg.jpg") center center no-repeat; height: 100%; margin-top: 5%;}
+
+
+.login {
+    background: url("bgsubtil.png") center center no-repeat;
+}
+
 .login-box {
     box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
     background: #fefefe;
     border-radius: 0;
     overflow: hidden;
+    margin-top: 5% !important;
 }
-
+.top-bar {margin-bottom: 1%;}
 .login-box .or {
     position: absolute;
     top: 50%;

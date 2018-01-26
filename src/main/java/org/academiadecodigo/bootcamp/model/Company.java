@@ -4,7 +4,7 @@ public class Company extends User {
 
     private Integer company_id;
 
-    public Company(Integer company_id,Integer user_id, String name, String password, String mail, String title, String phone, String location) {
+    public Company(Integer company_id,Integer user_id, String name, String password, String mail, Title title, String phone, String location) {
         super(user_id, name, password, mail, title, phone, location);
         this.company_id = company_id;
     }

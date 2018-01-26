@@ -8,6 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <script type="javascript">
+        //$("id")
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -18,20 +21,20 @@
 
     <title>Document</title>
 </head>
-<body>
-<div class="login-box">
-    <div class="row">
-        <div class="small-12 medium-6 column small-order-2 medium-order-1">
+<body class="login">
+    <div class="row login-box" style="width: 30%;">
+        <div class="small-12">
             <div class="login-box-form-section">
                 <h1 class="login-box-title">Sign up</h1>
                 <form method="post" action="/hackathon/">
                     <input class="login-box-input" type="email" name="email" placeholder="E-mail" />
                     <input class="login-box-input" type="password" name="password" placeholder="Password" />
-                    <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign me up" />
+                    <p id="error"> </p>
+                    <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign me in" />
                 </form>
             </div>
         </div>
     </div>
-</div>
+
 </body>
 </html>
