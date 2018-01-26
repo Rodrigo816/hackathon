@@ -18,32 +18,27 @@
 
     <title>Company Start Page</title>
 </head>
-<body>
-
+<body class="init">
 <div class="top-bar">
     <div class="top-bar-left">
-        <ul class="menu">
-            <li class="menu-text">Yeti Agency</li>
-            <li><a href="#">One</a></li>
-            <li><a href="#">Two</a></li>
+        <ul class="menu" style="float: left;">
+            <li class="menu-text">P.I.M.P. - P.I.M.P. Interactive Management Project</li>
+            <li>${user.name}</li>
+
         </ul>
+        <span class="welcomeAdmin">Welcome, NAME_NAME</span>
     </div>
-    <div class="top-bar-right">
-        <ul class="menu">
-            <li><a href="#">Three</a></li>
-            <li><a href="#">Four</a></li>
-            <li><a href="#">Five</a></li>
-            <li><a href="#">Six</a></li>
-        </ul>
-    </div>
+
 </div>
 <div class="row">
 
-    <div class="medium-12 columnshead">
-        <h2>This will show the list of sellers to this leader</h2>
+    <div class="medium-12 columns head">
+        <!--<h2>This will show the list of sellers to this leader</h2>-->
 
     </div>
     <div id="tableOfIndividuals">
+        <!-- use button tag for on page actions -->
+        <button class="button button-rounded-hover">Add Seller to the team</button>
         <table class="responsive-card-table unstriped">
             <thead>
             <tr>
@@ -59,6 +54,7 @@
                 <td data-label="Email">${email}</td>
                 <td data-label="Phone">${phone}</td>
                 <td data-label="Location">${location}</td>
+
             </tr>
             <tr>
                 <td data-label="Name">Joao</td>
@@ -69,10 +65,7 @@
 
             </tbody>
         </table>
-
-        <!-- use button tag for on page actions -->
-        <button class="button button-rounded-hover">Add Leader</button>
     </div>
-
+</div>
 </body>
 </html>
