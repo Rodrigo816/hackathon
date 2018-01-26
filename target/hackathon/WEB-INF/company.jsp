@@ -54,18 +54,26 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td data-label="Name">${name}</td>
-                <td data-label="Email">${email}</td>
-                <td data-label="Phone">${phone}</td>
-                <td data-label="Location">${location}</td>
-            </tr>
+
             <tr>
                 <td data-label="Name">Joao</td>
                 <td data-label="Email">joao@joao.com</td>
                 <td data-label="Phone">935372988</td>
                 <td data-label="Location">Angra</td>
             </tr>
+            <tr>
+                <td data-label="Name">Maria</td>
+                <td data-label="Email">maria@maria.com</td>
+                <td data-label="Phone">962660244</td>
+                <td data-label="Location">Angra</td>
+            </tr>
+            <tr>
+                <td data-label="Name">Isabel</td>
+                <td data-label="Email">isabel@isabel.org</td>
+                <td data-label="Phone">965535598</td>
+                <td data-label="Location">Funchal</td>
+            </tr>
+
 
             </tbody>
         </table>

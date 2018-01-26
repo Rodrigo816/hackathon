@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class MockIndividualService implements IndividualService{
 
-    private Map<String,Individual> individuals = new HashMap();
+    private Map<String,Individual> individuals = new HashMap<>();
 
     @Override
     public void addIndividual(Individual individual) {

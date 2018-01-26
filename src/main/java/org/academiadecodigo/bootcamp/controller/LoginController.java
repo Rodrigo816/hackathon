@@ -46,17 +46,17 @@ public class LoginController extends HttpServlet {
 
             if (individualService.findByEmail(email) != null) {
                 req.getSession().setAttribute("logged_individual", individualService.findByEmail(email));
-                resp.sendRedirect("/hackathon/users");
+                resp.sendRedirect("/hackathon/user");
             }
 
             if (companyService.findByEmail(email) != null) {
                 req.getSession().setAttribute("logged_company", companyService.findByEmail(email));
-                resp.sendRedirect("/hackathon/companies");
+                resp.sendRedirect("/hackathon/company");
             }
 
 
         } else {
-            resp.sendRedirect("/hackathon/login");
+            resp.sendRedirect("/hackathon/register");
         }
 
     }

@@ -4,12 +4,13 @@ import org.academiadecodigo.bootcamp.model.Company;
 import org.academiadecodigo.bootcamp.model.Individual;
 
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
 public class MockCompanyService implements CompanyService {
 
-    private Map<String, Company> companies;
+    private Map<String, Company> companies = new HashMap<>();
 
 
     @Override

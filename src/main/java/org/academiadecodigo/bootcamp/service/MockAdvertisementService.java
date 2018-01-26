@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class MockAdvertisementService implements AdvertisementService {
 
-    private Map<String, Advertisement> advertisements = new HashMap();
+    private Map<String, Advertisement> advertisements = new HashMap<>();
 
     @Override
     public void addAdvertisement(Advertisement advertisement) {
