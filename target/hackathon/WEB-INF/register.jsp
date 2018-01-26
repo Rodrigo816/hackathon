@@ -30,7 +30,13 @@
     <div class="row">
         <div class="small-12 medium-6 column small-order-2 medium-order-1">
             <div class="login-box-form-section">
-                <h1 class="login-box-title">Sign up</h1>
+                <h1 class="login-box-title">Register</h1>
+                username
+                password
+                email
+                radio title pessoa ou acompinhia
+                phone
+                location
                 <input class="login-box-input" type="text" name="username" placeholder="Username" />
                 <input class="login-box-input" type="email" name="email" placeholder="E-mail" />
                 <input class="login-box-input" type="password" name="password" placeholder="Password" />
