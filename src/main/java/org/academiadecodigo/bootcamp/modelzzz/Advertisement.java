@@ -1,23 +1,15 @@
-package org.academiadecodigo.bootcamp.model;
+package org.academiadecodigo.bootcamp.modelzzz;
 
-public class Application {
+public class Advertisement {
 
-    private Integer application_id;
     private Integer advertise_id;
     private Integer individual_id;
+    private String text;
 
-    public Application(Integer application_id, Integer advertise_id, Integer individual_id) {
-        this.application_id = application_id;
+    public Advertisement(Integer advertise_id, Integer individual_id, String text) {
         this.advertise_id = advertise_id;
         this.individual_id = individual_id;
-    }
-
-    public Integer getApplication_id() {
-        return application_id;
-    }
-
-    public void setApplication_id(Integer application_id) {
-        this.application_id = application_id;
+        this.text = text;
     }
 
     public Integer getAdvertise_id() {
@@ -34,5 +26,13 @@ public class Application {
 
     public void setIndividual_id(Integer individual_id) {
         this.individual_id = individual_id;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }

@@ -1,32 +1,71 @@
 package org.academiadecodigo.bootcamp.model;
 
-import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
-public class Individual extends User {
+public class Individual {
 
-    private Integer individual_id;
-    private Date date_of_birth;
+    private Set<Individual> sellers;
 
-    public Individual(Integer individual_id, Date date_of_birth,Integer user_id, String name, String password, String mail, Title title, String phone, String location) {
-        super(user_id, name, password, mail, title, phone, location);
-        this.individual_id = individual_id;
-        this.date_of_birth = date_of_birth;
+    private User user;
+    private String name;
+    private String location;
+    private String phone;
+    private boolean leader;
+
+    public Individual(User user, String name, String location, String phone) {
+        sellers = new HashSet<>();
+        this.user = user;
+        this.name = name;
+        this.location = location;
+        this.phone = phone;
     }
 
-    public Integer getIndividual_id() {
-        return individual_id;
+    public Set<Individual> getSellers() {
+        return sellers;
     }
 
-    public void setIndividual_id(Integer individual_id) {
-        this.individual_id = individual_id;
+    public void setSellers(Set<Individual> sellers) {
+        this.sellers = sellers;
     }
 
-    public Date getDate_of_birth() {
-        return date_of_birth;
+    public User getUser() {
+        return user;
     }
 
-    public void setDate_of_birth(Date date_of_birth) {
-        this.date_of_birth = date_of_birth;
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public boolean isLeader() {
+        return leader;
+    }
+
+    public void setLeader() {
+        this.leader = !leader;
     }
 }
-

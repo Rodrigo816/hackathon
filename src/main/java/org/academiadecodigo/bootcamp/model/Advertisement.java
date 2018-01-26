@@ -1,38 +1,33 @@
 package org.academiadecodigo.bootcamp.model;
 
+import java.util.HashMap;
+
 public class Advertisement {
 
-    private Integer advertise_id;
-    private Integer individual_id;
-    private String text;
+    private HashMap<String, Individual> applicants;
 
-    public Advertisement(Integer advertise_id, Integer individual_id, String text) {
-        this.advertise_id = advertise_id;
-        this.individual_id = individual_id;
-        this.text = text;
+    private String description;
+    private Individual advertiser;
+
+    public Advertisement(String description, Individual advertiser) {
+        applicants = new HashMap<>();
+        this.description = description;
+        this.advertiser = advertiser;
     }
 
-    public Integer getAdvertise_id() {
-        return advertise_id;
+    public HashMap<String, Individual> getApplicants() {
+        return applicants;
     }
 
-    public void setAdvertise_id(Integer advertise_id) {
-        this.advertise_id = advertise_id;
+    public void addApplicant(Individual applicant) {
+        applicants.put(applicant.getUser().getEmail(),applicant);
     }
 
-    public Integer getIndividual_id() {
-        return individual_id;
+    public String getDescription() {
+        return description;
     }
 
-    public void setIndividual_id(Integer individual_id) {
-        this.individual_id = individual_id;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
+    public Individual getAdvertiser() {
+        return advertiser;
     }
 }

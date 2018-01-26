@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.model;
+package org.academiadecodigo.bootcamp.modelzzz;
 
 public class Role {
 
