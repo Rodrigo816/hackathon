@@ -8,4 +8,5 @@ public interface IndividualService {
     void addSeller(Individual leader, Individual seller);
     void removeSeller(Individual leader, Individual seller);
     void changeLeaderStatus(Individual individual);
+    Individual findByEmail(String email);
 }

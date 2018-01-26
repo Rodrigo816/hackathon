@@ -6,4 +6,5 @@ public interface UserService {
 
     boolean authenticate(String email, String password);
     void addUser (User user);
+    User findByEmail(String email);
 }

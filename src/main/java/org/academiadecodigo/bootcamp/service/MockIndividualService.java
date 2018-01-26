@@ -30,5 +30,10 @@ public class MockIndividualService implements IndividualService{
         individual.setLeader();
     }
 
+    @Override
+    public Individual findByEmail(String email) {
+        return individuals.get(email);
+    }
+
 
 }
