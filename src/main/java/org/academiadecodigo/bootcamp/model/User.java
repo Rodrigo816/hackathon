@@ -6,11 +6,11 @@ public abstract class User {
     private String name;
     private String password;
     private String mail;
-    private String title;
+    private Title title;
     private String phone;
     private String location;
 
-    public User(Integer user_id, String name, String password, String mail, String title, String phone, String location) {
+    public User(Integer user_id, String name, String password, String mail, Title title, String phone, String location) {
         this.user_id = user_id;
         this.name = name;
         this.password = password;
@@ -52,11 +52,11 @@ public abstract class User {
         this.mail = mail;
     }
 
-    public String getTitle() {
+    public Title getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(Title title) {
         this.title = title;
     }
 

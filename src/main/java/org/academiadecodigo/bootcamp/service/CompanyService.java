@@ -1,4 +1,4 @@
 package org.academiadecodigo.bootcamp.service;
 
-public interface Service {
+public class CompanyService {
 }
