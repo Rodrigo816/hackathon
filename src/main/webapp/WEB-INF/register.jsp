@@ -38,9 +38,10 @@
                 phone
                 location
                 <input class="login-box-input" type="text" name="username" placeholder="Username" />
+                <input class="login-box-input" type="password" name="password" placeholder="Password" />
                 <input class="login-box-input" type="email" name="email" placeholder="E-mail" />
                 <input class="login-box-input" type="password" name="password" placeholder="Password" />
-                <input class="login-box-input" type="password" name="password2" placeholder="Retype password" />
+
                 <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign me up" />
             </div>
         </div>
