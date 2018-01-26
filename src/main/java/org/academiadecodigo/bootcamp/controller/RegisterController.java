@@ -62,7 +62,6 @@ public class RegisterController extends HttpServlet {
         }
 
 
-        pageDispatcher = getServletContext().getRequestDispatcher("/WEB-INF/login.jsp");
-        pageDispatcher.forward(req,resp);
+     resp.sendRedirect("/hackathon/login");
     }
 }

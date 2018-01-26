@@ -22,7 +22,7 @@ public class CompanyController extends HttpServlet{
         }
 
         RequestDispatcher pageDispatcher = getServletContext().getRequestDispatcher("/WEB-INF/company.jsp");
-
+        req.getSession().setAttribute("compname",company.getName());
         pageDispatcher.forward(req, resp);
     }
 }

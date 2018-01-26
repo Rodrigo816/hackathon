@@ -13,33 +13,27 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-float.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css?3566678">
     <title>Individual Start Page</title>
 
 </head>
-<body>
+<body class="int">
 
 <div class="top-bar">
     <div class="top-bar-left">
-        <ul class="menu">
-            <li class="menu-text">P.I.M.P Agency</li>
+        <ul class="menu" style="float: left;">
+            <li class="menu-text">P.I.M.P. - P.I.M.P. Interactive Management Project</li>
             <li>${user.name}</li>
 
         </ul>
+        <span class="welcomeAdmin">Welcome, ${user_name}</span>
     </div>
-    <div class="top-bar-right">
-        <ul class="menu">
-            <li><a href="#">Three</a></li>
-            <li><a href="#">Four</a></li>
-            <li><a href="#">Five</a></li>
-            <li><a href="#">Six</a></li>
-        </ul>
-    </div>
+
 </div>
 <div class="row">
 
-    <div class="medium-12 columnshead">
-        <h2>This will show the list of sellers to this leader</h2>
+    <div class="medium-12 columns head">
+       <!--<h2>This will show the list of sellers to this leader</h2>-->
 
     </div>
     <div id="tableOfIndividuals">
@@ -55,16 +49,35 @@
             </tr>
             </thead>
             <tbody>
+
             <tr>
-                <td data-label="Name">${name}</td>
-                <td data-label="Email">${email}</td>
-                <td data-label="Phone">${phone}</td>
-                <td data-label="Location">${location}</td>
+                <td data-label="Name">Rodrigo</td>
+                <td data-label="Email">rodrigo@howtoswear.pt</td>
+                <td data-label="Phone">98674123</td>
+                <td data-label="Location">Praia</td>
             </tr>
             <tr>
-                <td data-label="Name">Joao</td>
-                <td data-label="Email">joao@joao.com</td>
-                <td data-label="Phone">935372988</td>
+                <td data-label="Name">Sofia</td>
+                <td data-label="Email">sofia_sleepy_head@almofadas.pt</td>
+                <td data-label="Phone">964352754</td>
+                <td data-label="Location">Angra</td>
+            </tr>
+            <tr>
+                <td data-label="Name">David(sem E)</td>
+                <td data-label="Email">emborca_red_bull@energy.pt</td>
+                <td data-label="Phone">404NoTFounD</td>
+                <td data-label="Location">Praia</td>
+            </tr>
+            <tr>
+                <td data-label="Name">Amélia</td>
+                <td data-label="Email">party_all_night@nightowls.pt</td>
+                <td data-label="Phone">927555444</td>
+                <td data-label="Location">Praia</td>
+            </tr>
+            <tr>
+                <td data-label="Name">João Martins</td>
+                <td data-label="Email">washing_machine@laundry.com</td>
+                <td data-label="Phone">1111110000000</td>
                 <td data-label="Location">Angra</td>
             </tr>
 

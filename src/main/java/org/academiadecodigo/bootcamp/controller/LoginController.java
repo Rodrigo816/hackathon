@@ -46,6 +46,7 @@ public class LoginController extends HttpServlet {
 
             if (individualService.findByEmail(email) != null) {
                 req.getSession().setAttribute("logged_individual", individualService.findByEmail(email));
+                req.getSession().setAttribute("user_name",individualService.findByEmail(email).getName());
                 resp.sendRedirect("/hackathon/user");
             }
 
@@ -56,7 +57,7 @@ public class LoginController extends HttpServlet {
 
 
         } else {
-            resp.sendRedirect("/hackathon/register");
+            resp.sendRedirect("/hackathon/login");
         }
 
     }
