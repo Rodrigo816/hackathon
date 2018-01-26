@@ -1,0 +1,9 @@
+org/academiadecodigo/bootcamp/app/AppMain.class
+org/academiadecodigo/bootcamp/persistence/Dao.class
+org/academiadecodigo/bootcamp/controller/LoginController.class
+org/academiadecodigo/bootcamp/model/User.class
+org/academiadecodigo/bootcamp/service/Service.class
+org/academiadecodigo/bootcamp/model/Company.class
+org/academiadecodigo/bootcamp/model/Advertisement.class
+org/academiadecodigo/bootcamp/model/Individual.class
+org/academiadecodigo/bootcamp/model/Role.class
