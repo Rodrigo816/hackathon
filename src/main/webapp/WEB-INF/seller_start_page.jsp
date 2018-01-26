@@ -49,6 +49,8 @@
             </tbody>
     </table>
 </div>
+    <!-- use button tag for on page actions -->
+    <button class="button button-rounded-hover">Apply to the selected job</button>
 
 </body>
 </html>

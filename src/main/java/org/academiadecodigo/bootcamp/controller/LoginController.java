@@ -13,6 +13,7 @@ public class LoginController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher pageDispatcher = getServletContext().getRequestDispatcher("/WEB-INF/company_start_page.jsp");
 
+
         pageDispatcher.forward(req, resp);
     }
 
@@ -22,7 +23,7 @@ public class LoginController extends HttpServlet {
         String name = req.getParameter("username");
         String password = req.getParameter("password");
 
-            // method to verificar login
+            // method to verify login
         //resp.sendRedirect("/weblogin/users");
 
     }
