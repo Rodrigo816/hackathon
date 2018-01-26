@@ -19,6 +19,9 @@
     <title>Company Start Page</title>
 </head>
 <body>
+    <div class="head">
+        <h1>This will show the list of LEADERS</h1>
+    </div>
     <div id="tableOfIndividuals">
         <table class="responsive-card-table unstriped">
             <thead>
@@ -34,13 +37,20 @@
                 <td data-label="Name">${name}</td>
                 <td data-label="Email">${email}</td>
                 <td data-label="Phone">${phone}</td>
-                <td>data-label="Location">${location}</td>
-
-
+                <td data-label="Location">${location}</td>
+            </tr>
+            <tr>
+                <td data-label="Name">Joao</td>
+                <td data-label="Email">joao@joao.com</td>
+                <td data-label="Phone">935372988</td>
+                <td data-label="Location">Angra</td>
             </tr>
 
             </tbody>
         </table>
+
+        <!-- use button tag for on page actions -->
+        <button class="button button-rounded-hover">Add Leader</button>
     </div>
 
 </body>
